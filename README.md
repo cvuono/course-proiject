@@ -33,12 +33,19 @@ A description of this process is as follows:
   The script determines if the data is already prsent in the working directory. If not, the data is downloaded from the UCI machine learning website and is placed in the working directory in a folder called *UCI HAR Dataset*. 
 
   **Step Two**: Creating the wide data set *widedata*
-  The script creates a wide data set with three variables describing the subect and their activity (*type*, *subject*, and *activity*) and each of the *feature* as an individual variable. This was achieved through various joins and merges of  the individual data sets downloaded in Step 1. In particular using `rbind` to merge the test and the train data, `inner_join` to apply names to the acitivy numbers, `cbind` to merge the data sets and `grep` to limit to features measuring mean and standard deviation.  
+  The script creates a wide data set with three variables describing the subect and their activity (*type*, *subject*, and *activity*) and each of the features as individual variables. This was achieved through various joins and merges of  the individual data sets downloaded in Step 1. In particular using `rbind` to merge the test and the train data, `inner_join` to apply names to the acitivy numbers, `cbind` to merge the data sets and `grep` to limit to features measuring mean and standard deviation. The reulting wide data set *widedata* has 10,299 rows and 69 columns. 
   
   **Step Three**: Creating the narrow data set *narrowdata*
-  The wide data set was made narrow by using `melt`.  This took wide selection of *feature variables* and converted them to a single varriable *features* with a single variable indicating the measure called *value*. 
+  The wide data set *widedata* was made narrow by using `melt`.  This took wide selection of *feature variables* and converted them to a single varriable *features* with a single variable indicating the measure called *value*. 
   Subsequently, the resultant *feature* variable was divided into the measurement components described above using `substr`. 
+  Finally, the data was made clearer and tidy by changing factors to more natural level names and appropriately rearranging and selecting variables.
+  The reulting narrow data set *narrowdata* has 679,734 rows and 10 columns. 
   
+   **Step Four**: Creating the tidy summary data set *tidysummary*
+  The tidy summary data set *tidysummary* was created from the narrow data set *narrowdata* by using the `group_by` funciton to group the data by *subject* and *activity*. (Note: since we used the narrow data set, the variables related to the meausre features were also included in the group_by call.). The data was summarized into a mean by *subject* and *activity* using `summarize`. 
+  The reustling tidy data set "tidysummary" has 11,880 rows and 9 columns.  
   
+  ## Comment regarding tasks of the Course Project
+  Steps 1 -3 accomplish the first four tasks of the Course project and place the output into the narrow data set *narrowdata*. Task 5 of the Course Project is accomplished in Step 4 with the output placded in the tidy data set *tidysummary*
   
   

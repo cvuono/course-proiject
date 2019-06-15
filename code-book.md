@@ -13,4 +13,6 @@ An integer variable between 1 and 30 indicating the subject being measureed.
 A factor variable with six levels indicating the activity being measured. The levels are:
 *"LAYING", "SITTING","STANDING", "WALKING", "WALKING_DOWNSTAIRS" "WALKING_UPSTAIRS"*
 
+## Variables related to the features
+
 

@@ -1,6 +1,0 @@
-# Code_book
-This codebook provides information on the variables in the data sets in the course project
-
-## Variables related to the subjects
-**type**
-A factor variable with two levels: *test* and *train*

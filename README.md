@@ -11,17 +11,17 @@ The subjects were measured performing six types of **activity**: "*LAYING", "SIT
 
 Measurements were made over 28 time periods and captured in a long list of **features**. These features have many componenets as follows:
 
-+**domain**: Measurements were calculated over two **domains**: a time measurement (*time*) and the result of a Fast Fourier Transform (*Fourier*). 
+-**domain**: Measurements were calculated over two **domains**: a time measurement (*time*) and the result of a Fast Fourier Transform (*Fourier*). 
 
-+**motion**: Measurement was divided into the source of the **motion** *Body* and *Gravitation*
+-**motion**: Measurement was divided into the source of the **motion** *Body* and *Gravitation*
 
-+**sensor**: Movement was measured using two **sensors** internal to the smartphone: an *Accelerometer* and a *Gyroscope*.  
+-**sensor**: Movement was measured using two **sensors** internal to the smartphone: an *Accelerometer* and a *Gyroscope*.  
 
-+**jerk**: Some measurements were derived as the body linear acceleration and angular velocity were derived in time to obtain **jerk** signals. These signals are indicated as *Jerk*
+-**jerk**: Some measurements were derived as the body linear acceleration and angular velocity were derived in time to obtain **jerk** signals. These signals are indicated as *Jerk*
 
-+**axial**: Measurements were performed for each of three **axial** directections (*X, Y* and *Z*) and also the *Magnitude* of the three axial measures using the Euclidean norm. 
+-**axial**: Measurements were performed for each of three **axial** directections (*X, Y* and *Z*) and also the *Magnitude* of the three axial measures using the Euclidean norm. 
 
-+**aggregation**: Measurements were taken at 28 timed intervals with several sorts of **aggregation**. In this project, we only consider two of these: *mean* and *std* (standard deviation).
+-**aggregation**: Measurements were taken at 28 timed intervals with several sorts of **aggregation**. In this project, we only consider two of these: *mean* and *std* (standard deviation).
 
 ## How the data was parsed into *Tidy Data*
 

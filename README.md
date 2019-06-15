@@ -46,6 +46,6 @@ A description of this process is as follows:
   The reustling tidy data set "tidysummary" has 11,880 rows and 9 columns.  
   
   ## Comment regarding tasks of the Course Project
-  Steps 1 -3 accomplish the first four tasks of the Course project and place the output into the narrow data set *narrowdata*. Task 5 of the Course Project is accomplished in Step 4 with the output placded in the tidy data set *tidysummary*
+  Steps 1 -3 accomplish the first four tasks of the Course project and place the output into the narrow data set *narrowdata*. Task 5 of the Course Project is accomplished in Step 4 with the output placded in the tidy data set *tidysummary*. the file *tidysummary.txt* is uploaded to this repo. 
   
   
